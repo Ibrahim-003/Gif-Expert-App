@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className='bg-white/80 border-t border-neutral-300 px-4 py-3 sm:py-5 md:py-6' role='contentinfo'>
+      <footer className='border-t border-surface px-4 py-3 sm:py-5 md:py-6' role='contentinfo'>
         <div className='w-full max-w-[1024px] mx-auto flex flex-col items-center gap-3 sm:flex-row sm:justify-between'>
           <p>
             Created by{" "}
@@ -9,7 +9,7 @@ export default function Footer() {
               target='_blank'
               rel='author'
               aria-label='Sitio web del autor Ibrahim Almeyda'
-              className='text-blue-500 font-medium'
+              className='text-primary font-medium'
             >
               IbrahimAlmeyda
             </a>

@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
+@theme {
+    /* COLOR PALETTE */
+    --color-background: #0F172A;
+    --color-surface: #1E293B;
+    --color-text: #FFFFFF;
+    --color-text-muted: #94A3B8;
+    --color-primary: #3B82F6;
+    --color-secondary: #EC4899;
+    --color-success: #22C55E;
+    --color-warning: #FACC15;
+    --color-error: #EF4444;
+
+    --font-display: "Roboto", "sans-serif";
+}
+
+
 @layer base {
     body {
-        @apply bg-neutral-200
+        @apply bg-background text-text font-display;
     }
 
     main {

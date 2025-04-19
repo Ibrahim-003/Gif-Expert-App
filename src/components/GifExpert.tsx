@@ -10,27 +10,27 @@ export default function GifExpert() {
     newCategory = newCategory.toLowerCase();
 
     if (validateCategory(categories, newCategory)) {
-      setCategories((prevCategories) => [newCategory, ...prevCategories]);
-    } else {
-      return;
+      setCategories((prev) => [newCategory, ...prev]);
     }
   };
 
   const onRemoveCategory = (category: string) => {
-    setCategories(prevCategories => {
-        return prevCategories.filter(prevCategory => prevCategory !== category);
-    })
-  }
+    setCategories((prev) => prev.filter((c) => c !== category));
+  };
 
   return (
     <div>
       <GifSearch onNewCategory={onAddCategory} />
-      <div className="flex flex-col gap-12">
+      <section className='flex flex-col gap-12'>
         {categories &&
           categories.map((category) => (
-            <GifList key={category} category={category} onRemoveCategory={onRemoveCategory} />
+            <GifList
+              key={category}
+              category={category}
+              onRemoveCategory={onRemoveCategory}
+            />
           ))}
-      </div>
+      </section>
     </div>
   );
 }
