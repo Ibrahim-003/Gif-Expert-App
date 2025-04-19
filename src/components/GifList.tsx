@@ -44,7 +44,7 @@ export default function GifList({ category, onRemoveCategory }: GifListProps) {
           <button onClick={refetch}>Reintentar</button>
         </div>
       )}
-      <ul className='grid sm:grid-cols-2 lg:grid-cols-3 gap-5 items-start'>
+      <ul className='grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-5 items-start'>
         {gifs?.map((gif) => (
           <li key={gif.id}>
             <GifCard gif={gif} />
