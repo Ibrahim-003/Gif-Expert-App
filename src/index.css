@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-neutral-200
+    }
+
+    main {
+        @apply min-h-screen flex flex-col justify-between;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
